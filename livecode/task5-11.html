@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #1916df;
+      color: white;
+    }
+    .container {
+      background-color: #56a0bd;
+      width: 40%;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      background-color: #096d2b;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Amman Coding Academy Survey Form</h2>
+    <p>Thank you for taking the time to help</p>
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name">
+      
+      <label >Email</label>
+      <input type="email"  placeholder="Enter your Email">
+
+      <label >Age (optional)</label>
+      <input type="text"  placeholder="Age ">
+
+
+      <label>Would you recommend me to a friend?</label><br>
+      <input type="radio"> Definitely<br>
+      <input type="radio"> Maybe<br>
+      <input type="radio"> Not sure<br>
+
+      <label for="favorite_feature">What is your favorite feature of codepast</label>
+      <select id="favorite_feature" >
+        <option >Select an option</option>
+        <option >kkk</option>
+        <option >llll</option>
+        <option >ggg</option>
+        <option >xxx</option>
+      </select>
+
+      <label>What would you like to be improved in my survey? (Check all that apply)</label><br>
+      <input type="checkbox" > CSS needs to be more compelling<br>
+      <input type="checkbox" > Use some JavaScript<br>
+      <input type="checkbox" > No changes required<br>
+
+      <label >Any comments or suggestions?</label>
+      <textarea id="comments"  rows="4" placeholder="Enter your comment here..."></textarea>
+
+      <input type="submit" >
+    </form>
+  </div>
+</body>
+</html>

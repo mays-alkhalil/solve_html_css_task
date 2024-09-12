@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+         
+        table ,th ,td{
+           border: double 1px  black;
+          padding: 10px;
+           
+           
+        }
+
+    input[type="text"], input[type="password"], textarea {
+      width: 100%;
+    }
+    input[type="submit"], input[type="reset"], button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2> Form</h2>
+  <form>
+    <table>
+      <tr>
+        <td>Enter Name</td>
+        <td><input type="text" ></td>
+      </tr>
+      <tr>
+        <td>Enter Password</td>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td>Enter Address</td>
+        <td><textarea rows="4"></textarea></td>
+      </tr>
+      <tr>
+        <td>Select Game</td>
+        <td>
+          <input type="checkbox"  value="Hockey"> Hockey<br>
+          <input type="checkbox" value="Football"> Football<br>
+          <input type="checkbox" value="Badminton"> Badminton<br>
+          <input type="checkbox" value="Cricket"> Cricket<br>
+          <input type="checkbox" value="Volleyball"> Volleyball
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male"> Male
+          <input type="radio" name="gender" value="Female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Select your age</td>
+        <td>
+          <select name="age">
+     3       <option >Select</option>
+            <option >18-25</option>
+            <option >26-35</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Select Photo</td>
+        <td><input type="file" ></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button">Click Me</button>
+          <input type="reset" >
+          <input type="submit" value="Submit Form">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

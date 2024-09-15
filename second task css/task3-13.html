@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online FoodShop</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #e74c3c;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #4b4b4b;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-section {
+            background-image: url('images/donuts.jpeg');
+            background-size: cover;
+            color: rgba(62, 55, 1, 0.87);
+            padding: 50px 0;
+        }
+
+        .welcome-section h2 {
+            font-size: 32px;
+        }
+
+        .welcome-section button {
+            background-color: rgb(146, 146, 11);
+            color: rgb(250, 250, 250);
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .features img {
+            border-radius: 15px;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .features .feature-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .features button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: yellow;
+            border: none;
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .featured-products {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .featured-products h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #e67e22;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .product button {
+            background-color: yellow;
+            border: none;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online</h1>
+        <h2>FoodShop</h2>
+        <hr>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">ContactUs</a>
+    </nav>
+
+    <section class="welcome-section">
+        <h2>Welcome to Online FoodShop</h2>
+        <button>ORDER NOW</button>
+
+        <div class="features">
+            <div class="feature-container">
+                <img src="images/donuts1.png" alt="Prices">
+                <button>ORDER NOW</button>
+            </div>
+            <div class="feature-container">
+                <img src="images/donuts2.jpeg" alt="Specials">
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Produc ts</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/cupcakes.jpeg" alt="Cupcakes">
+                <button>ORDER NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/drinks.jpeg" alt="Drinks">
+                <button>ORDER NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/pasta.jpeg" alt="Pasta">
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2020-2021 OnlineFoodShop. All Rights are reserved.</p>
+    </footer>
+
+</body>
+</html>

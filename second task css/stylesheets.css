@@ -1,0 +1,99 @@
+.external{
+    color: rgb(43, 226, 76);
+    font-size: 3rem;
+}
+
+.task3_h1{
+    color: pink;
+    background-color: rgb(123, 29, 211);
+}
+.task1_4_BGI{
+    background-image: url('images/backGround.jpeg');
+    background-size: cover; /* لجعل الصورة تغطي كامل الخلفية */
+    background-position: center; /*   الصورة في المنتصف */
+    padding: 20px;  
+    color: rgb(0, 0, 0); 
+}
+.task1_5_BGI{
+
+    background-image: url('images/backGround.jpeg');
+    background-repeat: repeat-y;
+    height: 700px; 
+   
+}
+
+#task1_7{
+    color: rgb(144, 57, 57);
+}
+.task1_6{
+    color: rgb(144, 57, 57);
+}
+
+.bg-paragraph {
+    background-image: url('images/backGround.jpeg'); 
+    background-size: cover; /* لضبط الصورة لتغطي المساحة بالكامل */
+    background-repeat: no-repeat; 
+    padding: 20px; 
+    color: white; 
+}
+
+.double-bg-paragraph {
+    background-image: url('images/backGround.jpeg'), url('images/BG.jpeg'); 
+    background-position: left top, right bottom;
+    background-size: 50% ; /* ضبط حجم كل صورة */
+    background-repeat: no-repeat, no-repeat; 
+    padding: 20px;
+    color: white;
+}
+
+.task1_9_1{
+    color: aqua;
+
+}
+
+#task1_9_2{
+    background-color: aqua;
+    color: antiquewhite;
+}
+
+form h1 {
+    text-align: center; 
+    background-color: #800000; 
+    color: white;
+    padding: 10px; 
+}
+
+form {
+    background-color: #f5f5dc;
+    padding: 20px; 
+    border: black solid;
+}
+
+input[type="text"], textarea {
+    display: block; 
+    width: calc(100% - 22px); /* عرض الحقل بحيث يكون عرض النموذج كامل */
+    padding: 10px; 
+    margin: 10px 0; 
+}
+
+input[type="submit"] {
+    background-color: yellow; 
+    color: black; 
+    border: 1px solid black; 
+    padding: 10px 20px; 
+    display: block; 
+    margin: 10px auto; /* توسيط الزر */
+    font-size: 16px; 
+    width: calc(100% - 22px); 
+
+}
+
+
+
+.task14{
+    background-image: url('images/backGround.jpeg'), url('images/BG.jpeg');
+    height: 700px; 
+
+    background-repeat: repeat-x, repeat-y;
+    background-size: auto, auto; 
+}

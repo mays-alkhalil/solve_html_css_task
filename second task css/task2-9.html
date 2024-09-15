@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Task</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        .title {
+            text-decoration: underline;
+            color: green;
+        }
+
+        .content-box {
+            width: 400px;
+            height: 200px;
+            overflow: scroll;
+            background-color: black;
+            color: rgb(152, 112, 9);
+        }
+
+        .images {
+    display: flex;
+    flex-direction: column; /* لترتيب الصور تحت بعضها */
+    align-items: flex-start; /* لجعل العناصر على اليسار */
+}
+
+.image-container {
+    text-align: left; /* لجعل النصوص على اليسار */
+}
+
+.image-container img {
+    width: 150px;
+    height: 100px;
+}
+
+.image-container p {
+    font-size: 18px;
+    color: orange;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Amblyopia (Lazy Eye)</h1>
+
+    <div class="content-box">
+        <p>What is lazy eye?</p>
+        <p>Amblyopia is an eye condition that affects the ability to see clearly out of both eyes. It usually develops when a child is an infant or very young and can get worse over time if it’s not addressed. It occurs when one of their eyes doesn't develop proper vision.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde qui esse provident distinctio sit, impedit omnis repellat optio, quo pariatur explicabo expedita dicta, molestiae magnam facere ea laborum. Enim, numquam.
+        </p>
+    </div>
+
+    <div class="images">
+        <div class="image-container">
+            <p>Healthy eye Clear vision</p>
+            <img src="images/BG.jpeg" alt="">
+        </div>
+        <div class="image-container">
+            <p>Amblyopia</p>
+            <img src="images/backGround.jpeg" alt="" style="opacity: 0.5;">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+        }
+
+        .visible {
+            background-color: orange;
+            overflow: visible;
+        }
+
+        .hidden {
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        .scroll {
+            background-color: lightblue;
+            overflow: scroll;
+        }
+
+        .auto {
+            background-color: purple;
+            color: white;
+            overflow: auto;
+        }
+
+        .x-y {
+            background-color: green;
+            color: white;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Overflow: visible</h1>
+    <div class="box visible">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipiscing elit. Mollitia, aliquid blanditiis recusandae in quos, eveniet tempore fuga architecto fugit nobis quas provident minus magni!</p>
+    </div>
+
+    <h1>Overflow: hidden</h1>
+    <div class="box hidden">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipiscing elit. Mollitia, aliquid blanditiis recusandae in quos, eveniet tempore fuga architecto fugit nobis quas provident minus magni!</p>
+    </div>
+
+    <h1>Overflow: scroll</h1>
+    <div class="box scroll">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipiscing elit. Mollitia, aliquid blanditiis recusandae in quos, eveniet tempore fuga architecto fugit nobis quas provident minus magni!</p>
+    </div>
+
+    <h1>Overflow: auto</h1>
+    <div class="box auto">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipiscing elit. Mollitia, aliquid blanditiis recusandae in quos, eveniet tempore fuga architecto fugit nobis quas provident minus magni!</p>
+    </div>
+
+    <h1>Overflow-x and overflow-y</h1>
+    <div class="box x-y">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipiscing elit. Mollitia, aliquid blanditiis recusandae in quos, eveniet tempore fuga architecto fugit nobis quas provident minus magni!</p>
+    </div>
+
+</body>
+</html>

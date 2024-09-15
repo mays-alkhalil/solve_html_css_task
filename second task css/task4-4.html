@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Colored Boxes with Box 1 on Top</title>
+    <style>
+       
+        #box1 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 130px;
+            left: 80px; 
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            color: white;
+            background-color: lightcoral;
+            font-weight: bold;
+            z-index: 10; 
+            border-radius: 10px;
+
+        }
+
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 640px; 
+            
+        }
+
+    
+        .box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+       
+        .empty-box {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        
+        #box2 { background-color: lightblue; }
+        #box3 { background-color: lightgreen; }
+        #box4 { background-color: lightcoral; }
+        #box5 { background-color: lightseagreen; }
+        #box6 { background-color: lightpink; }
+        #box7 { background-color: lightskyblue; }
+        #box8 { background-color: lightgoldenrodyellow; }
+        #box9 { background-color: lightcyan; }
+        #box10 { background-color: lightsalmon; }
+        #box11 { background-color: lightgray; }
+        #box12 { background-color: lightsteelblue; }
+
+    </style>
+</head>
+<body>
+   
+    <div id="box1">1</div>
+
+    <!-- الحاوية التي تحتوي على بقية المربعات -->
+    <div class="container">
+        <!-- الصف الأول: مكان فارغ يليه 3 مربعات -->
+        <div class="empty-box"></div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+
+        <!-- الصف الثاني: 4 مربعات من 5 إلى 8 -->
+        <div id="box5" class="box">5</div>
+        <div id="box6" class="box">6</div>
+        <div id="box7" class="box">7</div>
+        <div id="box8" class="box">8</div>
+
+        <!-- الصف الثالث: 4 مربعات من 9 إلى 12 -->
+        <div id="box9" class="box">9</div>
+        <div id="box10" class="box">10</div>
+        <div id="box11" class="box">11</div>
+        <div id="box12" class="box">12</div>
+    </div>
+</body>
+</html>

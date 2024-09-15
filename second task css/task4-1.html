@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        /* Div1 - Position Relative */
+        #div1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+           
+        }
+
+        
+        #div2 {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            top: 150px;
+        
+            z-index: 10; 
+        }
+
+        
+        #div3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            top: 50px; 
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+         (Relative)
+        <div id="div3">(Absolute)</div>
+    </div>
+
+    <div id="div2"> (Fixed with z-index)</div>
+</body>
+</html>

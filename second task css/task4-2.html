@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index & Absolute Positioning</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            font-size: 24px;
+            color: white;
+            border-radius: 10px;
+            
+        }
+
+        #box1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1; /* Lowest layer */
+        }
+
+        #box2 {
+            background-color: blue;
+            top: 70px; 
+            left: 70px;
+            z-index: 2; 
+        }
+
+        #box3 {
+            background-color: green;
+            top: 90px; 
+            left: 90px;
+            z-index: 3; 
+        }
+
+        #box4 {
+            background-color: rgb(84, 166, 184);
+            top: 110px; 
+            left: 110px;
+            z-index: 4; 
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+</body>
+</html>

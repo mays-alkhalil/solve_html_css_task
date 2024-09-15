@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Shadow Box</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;  /* تمركز أفقي */
+            align-items: center;      /* تمركز عمودي */
+          
+        }
+
+        .multi-shadow-box {
+            color: black;        
+            font-size: 24px;   
+            padding: 40px 40px;  
+            text-align: center;   
+            box-shadow: 
+                0 0 0 3px blue,      
+                5px 5px 0 0 red,     
+                10px 10px 0 0 yellow, 
+                15px 15px 0 0 green; 
+        }
+    </style>
+</head>
+<body>
+    <div class="multi-shadow-box">
+        Multi Shadow 
+    </div>
+</body>
+</html>

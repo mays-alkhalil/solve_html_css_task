@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        .opaque {
+            background-color: red;
+            color: black; 
+            opacity: 1; 
+            padding: 10px; 
+            margin: 10px 0; 
+        }
+        .semi-transparent {
+            background-color: red; 
+            color: black; 
+            opacity: 0.5;
+            padding: 10px; 
+            margin: 10px 0; 
+        }
+        .transparent {
+            background-color: red; 
+            color: black; 
+            opacity: 0.25; 
+            padding: 10px;
+            margin: 10px 0; 
+        }
+        .invisible {
+            background-color: red; 
+            color: black; 
+            opacity: 0.1; 
+            padding: 10px; /
+        }
+    </style>
+</head>
+<body>
+    <div class="opaque">
+    <p >(opacity: 100)</p></div>
+    <div class="semi-transparent">
+    <p >(opacity: 50)</p></div>
+    <div class="transparent">
+    <p >(opacity: 25)</p>
+</div>
+<div class="invisible">
+    <p >(opacity: 0)</p>
+</div>
+</body>
+</html>

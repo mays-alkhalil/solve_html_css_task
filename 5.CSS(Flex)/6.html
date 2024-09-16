@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align-Self Example</title>
+    <style>
+       
+      
+        .container {
+            display: flex;
+            border: 5px solid goldenrod;
+        }
+        .item {
+            width: 50px;
+            height: 90px;
+           
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            font-size: 40px;
+            justify-content: center;
+            
+        }
+        .item:nth-child(1) {
+            background-color: rgb(0, 128, 19);
+            align-self: flex-start;
+            margin-top: 30px;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+
+        }
+        .item:nth-child(2) {
+            background-color: blue;
+            align-self: flex-start;
+        }
+        .item:nth-child(3) {
+            background-color: rgb(219, 20, 119);
+            align-self: flex-start;
+        }
+        .item:nth-child(4) {
+            background-color: darkslategray;
+            height: 300px;
+            align-self: flex-start;
+        }
+        .item:nth-child(5) {
+            background-color: orange;
+            align-self: center;
+        }
+        .item:nth-child(6) {
+            background-color: tomato;
+            align-self: flex-start;
+        }
+        .item:nth-child(7) {
+            background-color: coral;
+            align-self: flex-start;
+        }
+        .item:nth-child(8) {
+            background-color: rgba(41, 37, 36, 0.614);
+            align-self: flex-start;
+        }
+        .item:nth-child(9) {
+            background-color: green;
+            align-self: flex-start;
+        }
+        .item:nth-child(10) {
+            background-color: teal;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>

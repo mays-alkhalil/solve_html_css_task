@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+       
+
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+        .navbar ul {
+            list-style: none; 
+            /* عشان تقيم النقاط الي جنب الليست */
+            display: flex;
+           
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <img src="images/orange logo.png" alt="logo orange" style="width: 50px;">
+    <ul>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">portfolio</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

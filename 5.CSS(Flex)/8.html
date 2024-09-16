@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flex Size</title>
+    <style>
+        .container {
+            display: flex;
+           
+            
+        }
+        .box1 {
+            background-color: lightgreen;
+            flex-grow: 2; /* العنصر الأول يأخذ جزء أكبر */
+            padding: 20px;
+            text-align: center;
+        }
+        .box2 {
+            background-color: lightblue;
+            flex-grow: 1; /* العنصر الثاني يأخذ ضعف المساحة */
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">😀 1</div>
+        <div class="box2">🍕 2</div>
+    </div>
+</body>
+</html>

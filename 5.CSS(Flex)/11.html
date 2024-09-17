@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+            
+        }
+       div{
+        width: 300px;
+        height: 200px;
+        
+        border: 1px solid black;
+        margin: 5px;
+       }
+       .grid-item9{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+       }
+       .grid-item9 div{
+        width: auto;
+        height: auto;
+       
+       }
+       .grid-item6{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+       }
+       .grid-item6 div{
+        width: auto;
+        height: auto;
+        
+       }
+       .grid-item7{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+       .grid-item7 div{
+        width: auto;
+        height: auto;
+        
+       }
+    </Style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item9">
+        <div>subitem1</div>
+        <div>subitem2</div>
+        <div>subitem3</div>
+        <div>subitem4</div>
+        </div>
+        <div class="grid-item9">
+        <div>subitem1</div>
+        <div>subitem2</div>
+        <div>subitem3</div>
+        <div>subitem4</div>
+        </div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item6">
+            <div>sub1</div>
+        <div>sub2</div>
+    </div>
+        <div class="grid-item7">
+            <div>sub1</div>
+             <div>sub2</div>
+    </div>
+        <div class="grid-item">8</div>
+        <div class="grid-item9">
+        <div>subitem1</div>
+        <div>subitem2</div>
+        <div>subitem3</div>
+        <div>subitem4</div></div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item9"> 
+        <div>subitem1</div>
+        <div>subitem2</div>
+        <div>subitem3</div>
+        <div>subitem4</div>
+    </div>
+        
+      </div>
+</body>
+</html>

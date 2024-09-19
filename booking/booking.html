@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="left-section">
+                <div class="logo">Booking.com</div>
+                <ul class="nav-links">
+                    <li><img src="https://via.placeholder.com/20" alt="Stay Icon"><a href="#">Stays</a></li>
+                    <li><img src="https://via.placeholder.com/20" alt="Flights Icon"><a href="#">Flights</a></li>
+                    <li><img src="https://via.placeholder.com/20" alt="Car Rentals Icon"><a href="#">Car Rentals</a></li>
+                    <li><img src="https://via.placeholder.com/20" alt="Attractions Icon"><a href="#">Attractions</a></li>
+                    <li><img src="https://via.placeholder.com/20" alt="Taxi Icon"><a href="#">Airport Taxis</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <div class="location">
+                    <img src="https://via.placeholder.com/20" alt="Country Flag"><span>JOD</span>
+                </div>
+                <div class="language">
+                    <img src="https://via.placeholder.com/20" alt="Language Icon"><span>English (US)</span>
+                </div>
+                <div class="help">
+                   <span class="help-icon" title="Contact Customer Service">?</span>
+
+                    
+                </div>
+                <button class="list-your-property">List your property</button>
+                
+                <button class="register-btn">Register</button>
+                <button class="sign-in-btn">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h1>Find your next stay</h1>
+            <P>Search deals on hotels, homes, and much more...</P><br>
+            <div class="search-box">
+                <input type="text" placeholder="Where are you going?" />
+                <input type="date" placeholder="Check-in date" />
+                <!-- يختار كم حدا معهم -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">2 adults.0children.1room</button>
+                    <div class="dropdown-content">
+                        <div class="option">
+                            <label style="color :black">Adults</label>
+                            <div class="counter">
+                                <button>-</button>
+                                <input type="number" value="1" min="1">
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <label style="color :black">Children</label>
+                            <div class="counter">
+                                <button>-</button>
+                                <input type="number" value="0" min="0">
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <label style="color :black">Rooms</label>
+                            <div class="counter">
+                                <button>-</button>
+                                <input type="number" value="1" min="1">
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="option">
+                            <label style="color :black">Traveling with pets</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="pets" name="pets">
+                                <label for="pets" > </label>
+                            </div>
+                        </div>
+                        <button class="done-btn">Done</button>
+                    </div>
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Display Section -->
+    <section class="hotels-section">
+        <div class="container">
+            <h2>Offers</h2>
+            <p>Promotions, deals, and special offers for you
+            </p><br>
+            <div class="fieldset-container">
+                <fieldset class="offer-1">
+                    <h2>Seize the moment!</h2>
+                    <p>Save 15% or more when you book and stay before October 1, 2024</p>
+                    <button>Find Getaway Deals</button>
+                </fieldset>
+            
+                <fieldset class="offer-2">
+                    <img src="images/offer2.jpeg" alt="Offer Image">
+                    <div>
+                        <h2>Go for a good time, not a long time</h2>
+                        <p>Finish your year with a mini break. Save 15% or more when you book and stay by January 7, 2025.</p>
+                        <button>Find Late Escape Deals</button>
+                    </div>
+                </fieldset>
+            </div>
+            
+
+<div class="carousel-container">
+    <button class="carousel-button prev">&#10094;</button>
+    <div class="carousel">
+        <div class="carousel-images">
+          
+            <div class="carousel-slide"><img src="images/B&Bs.jpeg" alt="Image 1"><p>B&Bs</p></div>
+            <div class="carousel-slide"><img src="images/hotels.jpeg" alt="Image 2"><p>hotels</p></div>
+            <div class="carousel-slide"><img src="images/motels.jpeg" alt="Image 3"><p>motels</p></div>
+            <div class="carousel-slide"><img src="images/Ryokans.jpeg" alt="Image 4"><p>Ryokans</p></div>
+            
+        </div>
+    </div>
+    <button class="carousel-button next">&#10095;</button>
+</div>
+<br>
+<section class="trending">
+    <h2>Trending destinations</h2>
+    <p>Most popular choices for travelers from Jordan</p>
+    <div class="imgs-trending">
+        <div class="trending-item">
+            <img src="images/amman.jpg" alt="Amman">
+            <p class="caption">Amman</p>
+        </div>
+        <div class="trending-item">
+            <img src="images/aqaba.jpg" alt="Aqaba">
+            <p class="caption">Aqaba</p>
+        </div>
+        <div class="trending-item">
+            <img src="images/sowayma.jpg" alt="Sowayma">
+            <p class="caption">Sowayma</p>
+        </div>
+        <div class="trending-item">
+            <img src="images/istanbul.jpg" alt="Istanbul">
+            <p class="caption">Istanbul</p>
+        </div>
+        <div class="trending-item">
+            <img src="images/dubai.jpg" alt="Dubai">
+            <p class="caption">Dubai</p>
+        </div>
+    </div>
+</section>
+
+<section class="Explore">
+    <h2>Explore Jordan</h2>
+    <p>These popular destinations have a lot to offer</p>
+
+    <section class="carousel-container">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="images/amman.jpg" alt="Image 1">
+                <h3>amman</h3>
+                <p>173 properties</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/aqaba.jpg" alt="Image 2">
+                <h3>aqaba</h3>
+                <p>30 properties</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/dubai.jpg" alt="Image 3">
+                <h3>dubai</h3>
+                <p>73 properties</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/istanbul.jpg" alt="Image 4">
+                <h3>istanbul</h3>
+                <p>50 properties</p>
+            </div>
+            
+            
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+    
+
+</section>
+
+<section class="deals">
+    <h2>Deals for the weekend</h2>
+    <p>Save on stays for September 20 - September 22</p>
+
+    <section class="card-container">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="cards">
+            <div class="card">
+                <img src="images/rum maria luxury camp.jpg" alt="Image 1">
+                <h3>rum maria luxury camp</h3>
+                <p>wadi rum,jordan</p>
+                <div class="rating">
+                    <div class="rating-box">8.9</div>
+                    <span>Excellent - 435 reviews</span>
+                </div>
+                <div class="price">
+                    <span class="old-price">330 JOD</span>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/petra moon luxury hotel.jpg" alt="Image 2">
+                <h3>petra moon luxury hotel</h3>
+                <p>petra ,jordan</p>
+                <div class="rating">
+                    <div class="rating-box">8.7</div>
+                    <span>Excellent - 320 reviews</span>
+                </div>
+                <div class="price">
+                    <span class="old-price">330 JOD</span>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/sun city camp.jpg" alt="Image 3">
+                <h3>sun city camp</h3>
+                <p>wadi rum, jordan</p>
+                <div class="rating">
+                    <div class="rating-box">9.0</div>
+                    <span>Excellent - 500 reviews</span>
+                </div>
+                <div class="price">
+                    <span class="old-price">330 JOD</span>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/shada hotel.jpg" alt="Image 4">
+                <h3>shada hotel</h3>
+                <p>dubai, united arab emirates</p>
+                <div class="rating">
+                    <div class="rating-box">8.5</div>
+                    <span>Excellent - 200 reviews</span>
+                </div>
+                <div class="price">
+                    <span class="old-price">330 JOD</span>
+                    <span class="new-price">300 JOD</span>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+    
+
+</section>
+
+
+<section class="Explore">
+    <h2>Get inspiration for your next trip</h2>
+
+    <section class="carousel-container">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="images/amman.jpg" alt="Image 1">
+                <h3>the 6 best orlando hotels</h3>
+                <p>discover the best orlando hotels</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/aqaba.jpg" alt="Image 2">
+                <h3>5 best ski towns around the world</h3>
+                <p>discover a winter wonderland</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/dubai.jpg" alt="Image 3">
+                <h3>5 vacation homes </h3>
+                <p>enjoy thansksgiving dinner</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/istanbul.jpg" alt="Image 4">
+                <h3>6 incredible bangkok rooftop</h3>
+                <p>amazing city views</p>
+            </div>
+            
+            
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+    
+
+</section>
+
+
+<section class="deals stayTop">
+    <h2>Stay in a top-rated vacation rental</h2>
+
+    <section class="card-container">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="cards">
+            <div class="card">
+                <img src="images/rum maria luxury camp.jpg" alt="Image 1">
+                <h3>rum maria luxury camp</h3>
+                <p>wadi rum,jordan</p>
+                <div class="rating">
+                    <div class="rating-box">8.9</div>
+                    <span>Excellent - 435 reviews</span>
+                </div>
+                <div class="price">
+                    <p>starting from</p>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/petra moon luxury hotel.jpg" alt="Image 2">
+                <h3>petra moon luxury hotel</h3>
+                <p>petra ,jordan</p>
+                <div class="rating">
+                    <div class="rating-box">8.7</div>
+                    <span>Excellent - 320 reviews</span>
+                </div>
+                <div class="price">
+                    <p>starting from</p>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/sun city camp.jpg" alt="Image 3">
+                <h3>sun city camp</h3>
+                <p>wadi rum, jordan</p>
+                <div class="rating">
+                    <div class="rating-box">9.0</div>
+                    <span>Excellent - 500 reviews</span>
+                </div>
+                <div class="price">
+                    <p>starting from</p>
+                    <span class="new-price">300 JOD</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/shada hotel.jpg" alt="Image 4">
+                <h3>shada hotel</h3>
+                <p>dubai, united arab emirates</p>
+                <div class="rating">
+                    <div class="rating-box">8.5</div>
+                    <span>Excellent - 200 reviews</span>
+                </div>
+                <div class="price">
+                    <p>starting from</p>
+                    <span class="new-price">300 JOD</span>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+    
+
+</section>
+
+
+<section class="deals stayOur ">
+    <h2>Stay in a top-rated vacation rental</h2>
+
+    <section class="card-container">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="cards">
+            <div class="card">
+                <img src="images/rum maria luxury camp.jpg" alt="Image 1">
+                <h3>gyttja vastergards</h3>
+                <p>finland, nauvo</p>
+                <div class="rating">
+                    <div class="rating-box">8.9</div>
+                    <span>wonderful . 131 reviews</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/petra moon luxury hotel.jpg" alt="Image 2">
+                <h3>waldschenke stendenitz...</h3>
+                <p>germany, neuruppin</p>
+                <div class="rating">
+                    <div class="rating-box">8.7</div>
+                    <span>Excellent - 320 reviews</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/sun city camp.jpg" alt="Image 3">
+                <h3>harbor view</h3>
+                <p>uniter kingdom, uig</p>
+                <div class="rating">
+                    <div class="rating-box">9.0</div>
+                    <span>wonderful.141 reviews</span>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="images/shada hotel.jpg" alt="Image 4">
+                <h3>shada hotel</h3>
+                <p>dubai, united arab emirates</p>
+                <div class="rating">
+                    <div class="rating-box">8.5</div>
+                    <span>Excellent - 200 reviews</span>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+    
+
+</section>
+
+
+<section >
+    <h3>Travel more, spend less
+    </h3>
+    <fieldset class="travelMore">
+        <h4>Sign in, save money
+        </h4>
+       <p>Save 10% or more at participating properties – just look for the blue Genius label
+    </p>
+    <button class="sign-in-btn">Sign In</button>
+    <button class="register-btn">Register</button>
+    <img src="images/GeniusGenericGiftBox@2x.png" alt="" width="100px" >
+
+
+    </fieldset>
+<section class="img">  <img src="images/Capture.PNG" alt="" width="100%"></section>
+
+</section>
+
+<section class="destinations">
+    <h3>Destinations we love</h3>
+    <button>Regions</button>
+    <button>Cities</button>
+    <button>Place of interest</button>
+    <div class="links-container">
+        <a href="#">bora </a>
+        <p>59 properties</p>
+        <a href="#">cornwall</a>
+        <p>59 properties</p>
+        <a href="#">hawaii</a>
+        <p>59 properties</p>
+        <a href="#">zanzibar</a>
+        <p>59 properties</p>
+        <a href="#">texel</a>
+        <p>59 properties</p>
+        <a href="#">bali</a>
+        <p>59 properties</p>
+        <a href="#">jersey</a>
+        <p>59 properties</p>
+        <a href="#">bihar</a>
+        <p>59 properties</p>
+    
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
+    <p>Copyright © 1996–2024 Booking.com™. All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+</body>
+</html>

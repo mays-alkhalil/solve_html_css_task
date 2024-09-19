@@ -1,0 +1,12 @@
+.me{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 100px;
+}
+
+@media (min-width:800px){
+    .me {
+    
+      width: 100%;
+    }
+}
